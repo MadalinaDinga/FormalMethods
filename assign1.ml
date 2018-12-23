@@ -1,23 +1,6 @@
 print_string "Abstract Syntax Tree of CoreJava\n";;
 print_string "A program can be represented as a dictionary of classes (association list).\n";;
 
-
-(* dictionary look up 
-let students = [
-(1,"alice");
-( 2 ,"bob");
-( 3 ,"cathy" ) ;
-( 4 ,"david" )];;
-
-let rec lookup x l = match l with 
-	[]-> raise Not_found
-	|( k , v )::t->
-	if k = x then v else lookup x t;;
-	
-let s = lookup 3 students;;
-print_string("3 "^s^"\n");;
-*)
-
 (*--------------------ASSIGN1-------------------*)
 type tPrim = Tint | Tfloat | Tbool| Tvoid
 
